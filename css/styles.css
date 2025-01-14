@@ -1,0 +1,52 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 15px;
+    box-sizing: border-box;
+}
+  
+body {
+    font-family: Verdana, sans-serif;
+}
+
+header {
+    text-align: center;
+    padding: 1rem 0;
+}
+
+main {
+    text-align: center;
+    padding: 2rem;
+}
+
+footer {
+    text-align: right;
+    color: gray;
+    padding: 1rem 0;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Classes */
+p {
+    font-size: 21px;
+    color: gray;
+}
+h1 {
+    font-size: 50px;
+    font-weight: normal;
+    color: #ffffff;
+}
+
+h2 {
+    font-size: 42px;
+    font-weight: 300;
+    color: #ffffff;
+}
+
+a {
+    font-size: 16px;
+    color:aquamarine;
+    text-decoration: underline;
+    text-align: center;
+}
