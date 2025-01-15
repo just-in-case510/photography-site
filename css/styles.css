@@ -16,9 +16,10 @@ main {
     padding: 1rem 2rem;
 }
 
-/* Classe Styling*/
+/* General Classes*/
 p {
-
+    padding: 10px 15px;
+    line-height: 1.5;
 }
 h1 {
 
@@ -30,6 +31,16 @@ h2 {
 
 a {
 
+}
+
+/* Site wide Classes */
+.page-title {
+    text-align: center;
+    padding: 5px 0px 35px 0px;
+}
+
+.page-text {
+    padding: 25px 12.5%;
 }
 
 /* Header Styles */
@@ -77,7 +88,7 @@ a {
 }
   
 .footer-container {
-    height: 250px;
+    height: 150px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -138,20 +149,25 @@ a {
     align-items: center; /* Vertically centers the logo */
 }
 
-.logo-container .header-logo{
-    height: 200%; /* Adjust size of logo in header */
+.header-logo{
+    height: 175%; /* Adjust size of logo in header */
     object-fit: contain; /* Adjusts the image proportionally without cropping */
     object-position: center; /* Centers the image within its container */
 }
 
-.logo-container .footer-logo{
-    height: 75%; /* Adjust size of logo in footer */
+.footer-logo{
+    height: 125%; /* Adjust size of logo in footer */
     object-fit: contain;
     object-position: center; 
 }
 
-.page-title {
-    text-align: center;
+/* ___ Page */
+
+/* About Page */
+.about-me-img {
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
 }
   
 /* Responsive Design */
