@@ -13,7 +13,6 @@ body {
 
 main {
     text-align: left;
-    display: inline-flex;
     padding: 0px 12.5%;
 }
 
@@ -50,7 +49,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 20px;
+    padding: 15px 60px;
     color: white;
 }
   
@@ -170,7 +169,7 @@ footer {
     width: 50%;
 }
 
-.page-img-container #about-page-container {
+.page-img-container#about-page-container {
     height: inherit;
 }
 
@@ -180,6 +179,48 @@ footer {
     padding: 5px 20%;
     object-fit: contain;
     object-position: center;
+}
+
+/* Portfolio Page */
+.page-img-container#portfolio-cover-photos {
+    display: inline-flex;
+    justify-content: space-between;
+    padding-bottom: 35px;
+    flex-wrap: wrap;
+}
+
+.gallery-cover-card {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 35px 0px;
+}
+
+.gallery-cover-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 65%;
+    z-index: -1;
+}
+
+.gallery-name {
+    font-weight:500;
+    font-size: 25px;
+    width: 100%;
+    margin-left: -100%;
+}
+
+.gallery-cover-card:hover {
+    transform: scale(1.05);
+}
+
+.gallery-link {
+    text-decoration: none;
+    color: inherit;
+    width: 40%
 }
   
 /* Responsive Design */
@@ -195,8 +236,8 @@ footer {
     }
 
     .header {
-        flex-direction: column;
-        text-align: center;
+      flex-direction: column;
+      text-align: center;
     }
   
     .nav-list {
