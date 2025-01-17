@@ -1,7 +1,7 @@
 /* Reset some default browser styles */
 * {
     margin: 0;
-    padding: 5px;
+    padding: 0;
     box-sizing: border-box;
 }
   
@@ -13,12 +13,13 @@ body {
 
 main {
     text-align: left;
-    padding: 1rem 2rem;
+    display: inline-flex;
+    padding: 0px 12.5%;
 }
 
 /* General Classes*/
 p {
-    padding: 10px 15px;
+    padding: 10px 0px;
     line-height: 1.5;
 }
 h1 {
@@ -33,14 +34,14 @@ a {
 
 }
 
-/* Site wide Classes */
+/* Page Wide Classes */
 .page-title {
-    text-align: center;
+    text-align: left;
     padding: 5px 0px 35px 0px;
 }
 
 .page-text {
-    padding: 25px 12.5%;
+    padding: 25px 0px;
 }
 
 /* Header Styles */
@@ -61,7 +62,7 @@ a {
 .nav-list {
     list-style: none;
     display: flex;
-    gap: 10px;
+    gap: 20px;
 }
   
 .nav-list li {
@@ -80,14 +81,14 @@ a {
 }
 
 /* Footer Styles */
-.footer {
+footer {
     background-color: #333;
     color: white;
-    padding: 20px 0px;
+    padding: 20px 30px;
     text-align: center;
 }
   
-.footer-container {
+.footer-top {
     height: 150px;
     display: flex;
     flex-wrap: wrap;
@@ -133,7 +134,7 @@ a {
     color: #ff6f61; /* Highlight color */
 }
   
-/* Footer Bottom */
+/* Footer Bottom - copyright message*/
 .footer-bottom {
     margin-top: 20px;
     border-top: 1px solid #444;
@@ -150,7 +151,7 @@ a {
 }
 
 .header-logo{
-    height: 175%; /* Adjust size of logo in header */
+    height: 125%; /* Adjust size of logo in header */
     object-fit: contain; /* Adjusts the image proportionally without cropping */
     object-position: center; /* Centers the image within its container */
 }
@@ -164,8 +165,19 @@ a {
 /* ___ Page */
 
 /* About Page */
-.about-me-img {
+
+#about-page-container {
+    width: 50%;
+}
+
+.page-img-container #about-page-container {
+    height: inherit;
+}
+
+#about-me-img {
     width: 100%;
+    height: 100%;
+    padding: 5px 20%;
     object-fit: contain;
     object-position: center;
 }
